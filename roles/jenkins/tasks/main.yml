@@ -1,3 +1,3 @@
-- name: print
+- name: Hello
   ansible.builtin.debug:
     msg: Hello World
