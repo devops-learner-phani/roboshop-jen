@@ -1,6 +1,6 @@
 - name: Create a jenkins folder
   community.general.jenkins_job:
-    config: "{{ lookup('template', 'folder.xml') }}"
+    config: "{{ lookup('template', 'fold.xml') }}"
     name: "{{item.Name}}"
     token: "11d887fd376447e3cbcae3fd930ef55fbf"
     url: "http://jenkins.devopslearner.online:8080"
