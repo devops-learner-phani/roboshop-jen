@@ -2,4 +2,4 @@ folders:
   - {Name: "CI-Pipelines" , description: "create CI pipelines jobs for roboshop project"}
 
 pipelineJobs:
-  - {jobName: "cart" , folderName: "/" , repoName: "cart" , componentName: "cart"}
+  - {jobName: "cart" , folderName: "CI-Pipelines/" , repoName: "cart" , componentName: "cart"}
