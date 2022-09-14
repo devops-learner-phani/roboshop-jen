@@ -4,7 +4,7 @@
     dest: /tmp/pipeline.xml
   loop:
     - {repoName: "cart" , componentName: "cart"}
-    -
+    
 - name: Create a jenkins job using the token
   community.general.jenkins_job:
     config: "{{ lookup('template', 'tmp/pipeline.xml') }}"
