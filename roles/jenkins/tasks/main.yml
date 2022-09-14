@@ -1,5 +1,5 @@
-- name: template
-  template:
+- name: templates
+  ansible.builtin.template:
     src: pipeline.xml
     dest: /tmp/pipeline.xml
   loop:
