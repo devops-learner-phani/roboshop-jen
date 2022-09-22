@@ -3,7 +3,7 @@
     config: "{{ lookup('template', 'folder.xml') }}"
     name: "{{item.name}}"
     token: "11d887fd376447e3cbcae3fd930ef55fbf"
-    url: "http://jenkins.devopslearner.online:8080"
+    url: "http://44.203.18.71:8080"
     user: "admin"
   loop: "{{folders}}"
 
@@ -12,7 +12,7 @@
     config: "{{ lookup('template', 'pipeline.xml') }}"
     name: "{{item.folderName}}{{item.jobName}}"
     token: "11d887fd376447e3cbcae3fd930ef55fbf"
-    url: "http://jenkins.devopslearner.online:8080"
+    url: "http://44.203.18.71:8080"
     user: "admin"
   loop: "{{pipelineJobs}}"
 
@@ -21,7 +21,7 @@
     config: "{{ lookup('template', 'multibranch.xml') }}"
     name: "{{item.folderName}}{{item.jobName}}"
     token: "11d887fd376447e3cbcae3fd930ef55fbf"
-    url: "http://jenkins.devopslearner.online:8080"
+    url: "http://44.203.18.71.online:8080"
     user: "admin"
   loop: "{{multibranchJobs}}"
   
