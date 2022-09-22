@@ -11,12 +11,30 @@
     </actions>
     <description></description>
     <keepDependencies>false</keepDependencies>
+    <properties>
+        <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+            <triggers>
+                <org.jenkinsci.plugins.gwt.GenericTrigger plugin="generic-webhook-trigger@1.84.1">
+                    <spec></spec>
+                    <regexpFilterText></regexpFilterText>
+                    <regexpFilterExpression></regexpFilterExpression>
+                    <printPostContent>false</printPostContent>
+                    <printContributedVariables>false</printContributedVariables>
+                    <causeString>Generic Cause</causeString>
+                    <token>{{item.componentName}}</token>
+                    <tokenCredentialId></tokenCredentialId>
+                    <silentResponse>false</silentResponse>
+                    <overrideQuietPeriod>false</overrideQuietPeriod>
+                </org.jenkinsci.plugins.gwt.GenericTrigger>
+            </triggers>
+        </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+    </properties>
     <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2759.v87459c4eea_ca_">
         <scm class="hudson.plugins.git.GitSCM" plugin="git@4.11.5">
             <configVersion>2</configVersion>
             <userRemoteConfigs>
                 <hudson.plugins.git.UserRemoteConfig>
-                    <url>https://github.com/devops-learner-phani/{{item.repoName}}.git</url>
+                    <url>https://github.com/devops-learner-phani/{{item.repoName}}</url>
                 </hudson.plugins.git.UserRemoteConfig>
             </userRemoteConfigs>
             <branches>
@@ -28,7 +46,7 @@
             <submoduleCfg class="empty-list"/>
             <extensions/>
         </scm>
-        <scriptPath>{{item.fileName}}</scriptPath>
+        <scriptPath>Jenkinsfile</scriptPath>
         <lightweight>true</lightweight>
     </definition>
     <triggers/>
