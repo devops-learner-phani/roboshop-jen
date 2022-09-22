@@ -28,7 +28,7 @@
             <jenkins.branch.BranchSource>
                 <source class="jenkins.plugins.git.GitSCMSource" plugin="git@4.11.5">
                     <id>8831be99-7e76-40d7-a753-465846d7f5e6</id>
-                    <remote>https://github.com/devops-learner-phani/{{item.repoName}}</remote>
+                    <remote>https://github.com/devops-learner-phani/{{item.repoName}}.git</remote>
                     <credentialsId></credentialsId>
                     <traits>
                         <jenkins.plugins.git.traits.BranchDiscoveryTrait/>

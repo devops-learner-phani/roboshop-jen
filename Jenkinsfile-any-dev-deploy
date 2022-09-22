@@ -14,7 +14,7 @@ pipeline {
   stages {
     stage('Clone Repo') {
       steps {
-        git branch: 'main', url: "https://github.com/devops-learner-phani/roboshop-ansible.git"
+        git branch: 'main', url: "https://github.com/devops-learner-phani/roboshop-jenkins.git"
         }
       }
     }

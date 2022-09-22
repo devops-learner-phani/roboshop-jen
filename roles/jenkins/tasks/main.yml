@@ -24,4 +24,3 @@
 #    url: "http://jenkins.devopslearner.online:8080"
 #    user: "admin"
 #  loop: "{{multibranchJobs}}"
-#
